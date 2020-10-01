@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\MoveIcon.png" />
+    <None Remove="Images\MoveIcon_Small.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\MoveIcon.png" />
+    <Resource Include="Images\MoveIcon_Small.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="SaveFiles\" />
+  </ItemGroup>
+
+</Project>
